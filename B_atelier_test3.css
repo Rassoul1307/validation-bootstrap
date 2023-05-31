@@ -1,0 +1,343 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background: linear-gradient(RGBA(35, 31, 64, 0.6),RGBA(35, 31, 64, 0.6)), url("img/counter_bg.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+
+/* ------------------------------header section------------------------------------ */
+.navbar-brand img{
+    width: 160px;
+}
+.top-logo img{
+    width: 150px;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: #ff7c08;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+.texte1:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+.social-link:hover, .social-link:focus {
+    background: white;
+    text-decoration: none;
+    color: #ff7c08;
+}
+
+.parallelogram { 
+    height: 60px;
+    background-color: #ff7c08;
+    /* Skew */
+    transform: skew(-20deg);
+}
+.navbar .navbar-nav .nav-item .nav-link:focus{
+    color: #FF7C08;
+}
+.navbar .navbar-nav .nav-item:hover{
+    border-bottom: 2px solid #FF7C08;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #000000;
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #FF7C08;
+}
+
+
+@media screen and (max-width:800px) {
+    .parallelogram{
+        background-color: transparent;
+        margin-right: 0;
+        
+    }
+}
+
+.top-2{
+    background-color: #231f40;
+}
+.texte1{
+    transform: skew(20deg);
+}
+.group-icon .rounded-circle{ 
+    background-color: rgb(255, 238, 223);
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.6s ease-in-out;
+}
+.group-icon-nav .rounded-circle{ 
+    background-color: #FF7C08;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.6s ease-in-out;
+}
+.group-icon .rounded-circle:hover{ 
+    background-color: #FF7C08;
+    /* color: #FF7C08 !important; */
+}
+.group-icon-nav .rounded-circle:hover{ 
+    background-color: #f9f7f5;
+    /* color: #FF7C08 !important; */
+}
+.group-icon .rounded-circle:hover a i{ 
+    color: #ffffff !important;
+}
+.group-icon-nav .rounded-circle:hover a i{ 
+    color: #FF7C08 !important;
+}
+.corps{
+    background-color: rgb(238, 246, 235);
+}
+.rounded-circle span{
+    bottom: 27px;
+    left: 27px;
+    border: 1px solid white;
+    padding-top: 2px;
+}
+/* ---------------------------fin hearder section -------------------------------------------- */
+
+/*===============
+EN-TETE
+=================*/
+#entete{
+	background-color: #231f40;
+}
+.contact-1{
+	background-color: #ff7c08;
+}
+.contact-2{
+	
+}
+.medias-sociaux{
+	background-color: #ff7c08;
+}
+.medias-sociaux:hover{
+	color: #ff7c08;
+	background-color: #fff;
+}
+/*==================
+	NAVIGATEUR
+====================
+*/
+#navigateur{
+	background-color: #fff;
+}
+#navigateur .pannier_compte .medias-sociaux{
+	color: #231f40;
+	background-color: #ffebda;
+}
+#navigateur .pannier_compte .medias-sociaux:hover{
+	color: #fff;
+	background-color: #ff7c08;
+}
+#navigateur .pannier_compte .nb_elmt_pannier{
+	background-color: #ff7c08;
+}
+
+#logo{
+	width: 125px;
+}
+/*=================
+		TITRE
+===================*/
+#titre{
+	min-height: 320px;
+}
+#titre ul:hover{
+	cursor: pointer;
+}
+#titre .menu:hover{
+	color: #ff7c08;
+}
+
+form{
+	background-color: #eef6eb;
+}
+
+/*================
+	FORMULAIRE
+==================*/
+#formulaire{
+	margin: 70px 0;
+}
+#formulaire .search{
+	background-color: #ff7c08;
+}
+
+/*================
+		MENU
+==================*/
+/*-------------------------TRANSITION-------------------------*/
+#entete .medias-sociaux,
+#navigateur .pannier_compte .medias-sociaux,
+#menu .foods, 
+#menu .foods .food-info, 
+#menu .foods .food, 
+#menu .btn-food-name .food-category, 
+#menu .foods .addToCard, 
+#menu .heart-eye,
+#titre .menu,
+#formulaire .search{
+	transition: 0.5s;
+}
+/*-------------------------ANIMATION-------------------------*/
+#menu .foods{
+	animation-name: moove;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	-o-animation-name: moove;
+	-o-animation-duration: 2s;
+	-o-animation-timing-function: ease;
+	-moz-animation-name: moove;
+	-moz-animation-duration: 2s;
+	-moz-animation-timing-function: ease;
+	-webkit-animation-name: moove;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease;
+}
+@-keyframes moove{
+	from {transform: translateY(15px); opacity: 0.2}
+	to {transform: translateY(0px); opacity: 1}
+}
+@-o-keyframes moove{
+	from {transform: translateY(15px); opacity: 0.2}
+	to {transform: translateY(0px); opacity: 1}
+}
+@-webkit-keyframes moove{
+	from {transform: translateY(15px); opacity: 0.2}
+	to {transform: translateY(0px); opacity: 1}
+}
+@-moz-keyframes moove{
+	from {transform: translateY(15px); opacity: 0.2}
+	to {transform: translateY(0px); opacity: 1}
+}
+/*------------------------------------------------------------*/
+#menu .foods:hover .food-info{
+	transform: translateY(-3px);
+}
+#menu .foods{
+/*	width: 23%;*/
+/*	flex: 0 0 auto;*/
+	transform: scale(0.9);
+}
+#menu .foods .menu2{
+	overflow: hidden;
+}
+#menu .foods:hover .food{
+	transform: scale(1.1);
+}
+#menu .food-name{
+	color: #231f40;
+}
+#menu .btn-food-name{
+	bottom: 5%;
+}
+#menu .btn-food-name .food-category{
+	background-color: #ff7c08;
+	color: #fff;
+}
+#menu .btn-food-name .food-category:hover, #menu .foods .addToCard:hover{
+	color: #231f40;
+}
+#menu .foods .addToCard:hover, #formulaire .search:hover{
+	background-color: #231f40;
+}
+#menu .etoile{
+	color: #ff7c08;
+}
+#menu .prix{
+	color: #ff7c08;
+}
+#menu .addToCard, #menu .heart-eye:hover{
+	background-color: #ff7c08;
+	color: #fff;
+}
+#menu .heart-eye{
+	color: #ff7c08;
+	border: 1px solid #ff7c08;
+}
+
+#nb-circle .nb-circle{
+	width: 50px;
+	height: 50px;
+	color: #333;
+}
+#nb-circle .nb-circle:hover{
+	background-color: #ff7c08;
+	color: #fff;
+}
+/*================
+		FOOTER
+==================*/
+.footer-regfood .titre-descriptif::after,
+.footer-regfood .titre-descriptif3::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    background-color: #ff7c08;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-left: 7px;
+}
+.footer-regfood .titre-descriptif3::after {
+    width: 120px;
+}
+.footer-regfood .last-column .hstack::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ff7c08;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.footer-regfood .hstack{ 
+    margin-left: 10px;
+}
+.footer .footer-regfood {
+    background: url("footer_bg.jpg") no-repeat top/cover
+        rgba(35, 31, 64, 0.88);
+    min-height: 400px;
+    background-blend-mode: darken;
+}
+.footer .footer-copyright {
+    background-color: #ff7c08;
+}
+.footer .footer-regfood .rounded-circle {
+    background-color: #ff7c08;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.6s ease-in-out;
+}
+.footer .footer-regfood .rounded-circle:hover {
+    background-color: white;
+}
+.footer .footer-regfood .rounded-circle:hover a i {
+    color: #ff7c08 !important;
+}
+.footer-regfood .flex-column .nav-link:hover {
+    color: #ff7c08 !important;
+}
